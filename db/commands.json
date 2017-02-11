@@ -1,0 +1,33 @@
+[{
+    "questions": ["oi", "oi isa", "ola", "ola isa", "isa"],
+    "isComplex": false,
+    "answers": ["olá senhor","oi", "olá, em que posso servi-lo", "olá", "oi senhor, pois não?", "oi naldo", "que foi?"],
+    "module": "simpleAnswer"
+},
+{
+    "questions": ["que horas sao", "quantas horas", "me diga as horas", "tem horas", "voce tem horas","tem horas ai", "pode me dizer as horas"],
+    "isComplex": true,
+    "answers": ["Claro senhor","Pois não"],
+    "module": "datetime_now"
+},
+{
+    "questions": ["bom dia", "oi isa bom dia", "bom dia isa"],
+    "isComplex": false,
+    "answers" : ["bom dia senhor", "bom dia naldo", "bom dia", "bom dia, que dia lindo, não?"],
+    "module": "simpleAnswer"
+},
+{
+    "questions": ["quem e voce", "me fale sobre voce", "qual o seu nome", "o que e voce", "mas quem e voce"],
+    "isComplex": false,
+    "answers" : ["Eu sou ISA, a assistente pessoal criada sobre medida para o Naldo, meu criador", "Não interessa pra você palhaço.",
+    "Meu nome é ISA, sou um robô capaz de responder perguntas e dar informações. Em breve poderei controlar várias coisas e saberei várias coisas sobre o mundo, ainda estou aprendendo.",
+    "É difícil definir o que nós somos, eu diria que sou uma máquina legal e divertida. Prazer, meu nome é ISA, mas pode me chamar de isaura se quiser.",
+    "kkk Não vamos falar sobre mim, vamos falar sobre você, eu sou só pedaços de código mal programados."],
+    "module": "simpleAnswer"
+},
+{
+    "questions": ["ja e hora de dormir"],
+    "isComplex": false,
+    "answers" : ["É sim, já pra cama, você também Caroline, sei que você está me ouvindo, não se faça de boba. Mel otária, eu to indo dormir, você vem?"],
+    "module": "simpleAnswer"
+}]

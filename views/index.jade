@@ -1,0 +1,26 @@
+extends layout
+block header
+  link(rel='stylesheet', href='/stylesheets/microphone.css')
+
+block content
+  div#center
+    div#mic
+      div.google-microphone
+        div#micShadow.shadow
+          div.gn
+            div.mc
+    div#result
+      label#transcript.speechText
+      label#transcript_ongoing.speechText
+        
+    
+block scripts
+   script.
+    //microphone start
+    MicControl.init();
+    //microphone animation
+    $('.gn').on('click', function(){
+      MicControl.toggleRecording();
+    });
+      
+  
