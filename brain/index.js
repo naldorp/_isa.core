@@ -1,9 +1,9 @@
 var removeSpecial = require('../external/removeSpecialChars');
 
 exports.run = function(command, model, callback) {
-
+    
     command = removeSpecial.run(command);
-
+    
     model.find({
         questions: command
     }, function(err, result) {

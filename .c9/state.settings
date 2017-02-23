@@ -15,19 +15,68 @@
     },
     "console": {
         "@expanded": true,
-        "@height": 432,
+        "@height": 392,
         "@maximized": "false",
         "json()": {
             "meta": {
                 "accessList": [
-                    "tab2",
-                    "tab7",
-                    "tab0",
-                    "tab1"
+                    "tab3",
+                    "tab8",
+                    "tab1",
+                    "tab22",
+                    "tab21"
                 ]
             },
             "name": "pane1",
             "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab21",
+                    "path": "",
+                    "className": [
+                        "tab21"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1487351086739
+                        },
+                        "filter": true,
+                        "title": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa.admin/app/less\" ",
+                        "tooltip": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa.admin/app/less\" ",
+                        "terminal": {
+                            "id": "devel_833",
+                            "cwd": "",
+                            "width": 1551,
+                            "height": 366
+                        }
+                    },
+                    "editorType": "terminal",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab22",
+                    "path": "",
+                    "className": [
+                        "tab22"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {},
+                        "filter": true,
+                        "title": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa.admin\" ",
+                        "tooltip": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa.admin\" ",
+                        "terminal": {
+                            "id": "devel_114",
+                            "cwd": "",
+                            "width": 1551,
+                            "height": 366
+                        }
+                    },
+                    "editorType": "terminal",
+                    "active": false
+                },
                 {
                     "type": "tab",
                     "name": "tab1",
@@ -63,7 +112,7 @@
                                 "var outString = sourceString.replace(/[`~!@#$%^&*()_|+\\-=?;:'\",.<>\\{\\}\\[\\]\\\\\\/]/gi, '');",
                                 "process.env.PORT"
                             ],
-                            "pos": -1
+                            "pos": 0
                         }
                     },
                     "editorType": "immediate",
@@ -71,50 +120,25 @@
                 },
                 {
                     "type": "tab",
-                    "name": "tab0",
+                    "name": "tab3",
                     "path": "",
                     "className": [
-                        "tab0"
-                    ],
-                    "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1486571992144
-                        },
-                        "filter": true,
-                        "title": "bash - \"baraum@Isa: ~\" ",
-                        "tooltip": "bash - \"baraum@Isa: ~\" ",
-                        "terminal": {
-                            "id": "devel_786",
-                            "cwd": "",
-                            "width": 1004,
-                            "height": 406
-                        }
-                    },
-                    "editorType": "terminal",
-                    "active": false
-                },
-                {
-                    "type": "tab",
-                    "name": "tab2",
-                    "path": "",
-                    "className": [
-                        "tab2",
+                        "tab3",
                         "focus"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1486572703230
+                            "timestamp": 1487684448577
                         },
                         "filter": true,
-                        "title": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa\" ",
-                        "tooltip": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa\" ",
+                        "title": "sudo - \"baraum@Isa: ~/c9sdk/workspaces/_isa\" ",
+                        "tooltip": "sudo - \"baraum@Isa: ~/c9sdk/workspaces/_isa\" ",
                         "terminal": {
-                            "id": "devel_186",
+                            "id": "devel_809",
                             "cwd": "",
-                            "width": 1004,
-                            "height": 406
+                            "width": 1551,
+                            "height": 366
                         }
                     },
                     "editorType": "terminal",
@@ -122,24 +146,24 @@
                 },
                 {
                     "type": "tab",
-                    "name": "tab7",
+                    "name": "tab8",
                     "path": "",
                     "className": [
-                        "tab7"
+                        "tab8"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1486646491132
+                            "timestamp": 1487860089418
                         },
                         "filter": true,
                         "title": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa\" ",
                         "tooltip": "bash - \"baraum@Isa: ~/c9sdk/workspaces/_isa\" ",
                         "terminal": {
-                            "id": "devel_577",
+                            "id": "devel_157",
                             "cwd": "",
-                            "width": 1004,
-                            "height": 406
+                            "width": 1551,
+                            "height": 366
                         }
                     },
                     "editorType": "terminal",
@@ -166,26 +190,24 @@
             "@ace": 2,
             "@acestatus": 1,
             "@datagrid": 1,
-            "@divider": 8,
-            "@document": 22,
+            "@divider": 5,
+            "@document": 14,
             "@form": 5,
             "@immediate": 1,
-            "@menu": 8,
-            "@menuitem": 30,
-            "@pane": 3,
-            "@postmessage": 4,
+            "@menu": 5,
+            "@menuitem": 13,
+            "@pane": 2,
             "@preferences": 1,
-            "@preview": 1,
-            "@session": 22,
-            "@tab": 22,
-            "@undoManager": 22
+            "@session": 14,
+            "@tab": 11,
+            "@undoManager": 14
         }
     },
     "findinfiles": {
         "@console": "true",
         "@matchcase": "false",
         "@regex": "false",
-        "@scope": "selection",
+        "@scope": "project",
         "@wholeword": "false"
     },
     "menus": {
@@ -196,12 +218,13 @@
     },
     "panecycle": {
         "json()": [
-            "tab2"
+            "tab3",
+            "tab10"
         ]
     },
     "panels": {
         "@active-left": "tree",
-        "@width-left": 290,
+        "@width-left": 297,
         "commands.panel": {
             "@enabled": "true",
             "@name": "commands.panel"
@@ -232,14 +255,12 @@
         "@showfs": true,
         "expanded": {
             "json()": [
-                "/node_modules/recordrtc-nodejs/uploads",
                 "/",
-                "/node_modules/recordrtc-nodejs/static",
-                "/public/images",
-                "/public/stylesheets",
-                "/trash",
-                "/New Folder",
-                "/external/hourToText"
+                "/routes",
+                "/config",
+                "/db",
+                "/brain",
+                "/brain/modules"
             ]
         }
     },
@@ -249,28 +270,155 @@
     "search-history": {
         "search": {
             "json()": [
-                "final_span",
-                "ignore_onend",
-                "final_span",
-                "start_timestamp",
-                "startButton",
-                "process",
-                "source",
-                "mic.gif",
-                "mic.fig",
-                "mic.gi",
-                "isRecordOnlyAudio"
+                "ui-",
+                "{{",
+                "bra"
+            ]
+        },
+        "searchfiles": {
+            "json()": [
+                "ui-sref",
+                "allCommands"
             ]
         }
     },
     "tabs": {
         "json()": {
-            "focus": "tab2",
+            "focus": "/brain/modules/simpleAnswer.js",
             "meta": {
-                "accessList": []
+                "accessList": [
+                    "tab10",
+                    "tab7",
+                    "tab5",
+                    "tab2",
+                    "tab4",
+                    "tab9"
+                ]
             },
             "name": "pane0",
-            "nodes": [],
+            "nodes": [
+                {
+                    "type": "tab",
+                    "name": "tab2",
+                    "path": "/routes/cmd.js",
+                    "className": [
+                        "tab2"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1487860420956
+                        },
+                        "filter": true,
+                        "title": "cmd.js",
+                        "tooltip": "/routes/cmd.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
+                    "path": "/config/index.js",
+                    "className": [
+                        "tab4"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1486852081285
+                        },
+                        "filter": true,
+                        "title": "index.js",
+                        "tooltip": "/config/index.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab5",
+                    "path": "/app.js",
+                    "className": [
+                        "tab5"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1487619799297
+                        },
+                        "filter": true,
+                        "title": "app.js",
+                        "tooltip": "/app.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab7",
+                    "path": "/brain/index.js",
+                    "className": [
+                        "tab7"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1487860882237
+                        },
+                        "filter": true,
+                        "title": "index.js",
+                        "tooltip": "/brain/index.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab9",
+                    "path": "/routes/index.js",
+                    "className": [
+                        "tab9"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1486850661682
+                        },
+                        "filter": true,
+                        "title": "index.js",
+                        "tooltip": "/routes/index.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab10",
+                    "path": "/brain/modules/simpleAnswer.js",
+                    "className": [
+                        "tab10",
+                        "focus"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1487860872018
+                        },
+                        "filter": true,
+                        "title": "simpleAnswer.js",
+                        "tooltip": "/brain/modules/simpleAnswer.js",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": true
+                }
+            ],
             "skin": "editor_tab",
             "skinset": "default",
             "type": "pane"
@@ -278,7 +426,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/package.json"
+            "/brain/modules/simpleAnswer.js"
         ]
     }
 }
