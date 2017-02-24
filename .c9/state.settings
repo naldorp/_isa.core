@@ -20,8 +20,8 @@
         "json()": {
             "meta": {
                 "accessList": [
-                    "tab3",
                     "tab8",
+                    "tab3",
                     "tab1",
                     "tab22",
                     "tab21"
@@ -123,8 +123,7 @@
                     "name": "tab3",
                     "path": "",
                     "className": [
-                        "tab3",
-                        "focus"
+                        "tab3"
                     ],
                     "document": {
                         "changed": false,
@@ -142,14 +141,15 @@
                         }
                     },
                     "editorType": "terminal",
-                    "active": true
+                    "active": false
                 },
                 {
                     "type": "tab",
                     "name": "tab8",
                     "path": "",
                     "className": [
-                        "tab8"
+                        "tab8",
+                        "focus"
                     ],
                     "document": {
                         "changed": false,
@@ -167,7 +167,7 @@
                         }
                     },
                     "editorType": "terminal",
-                    "active": false
+                    "active": true
                 }
             ],
             "skin": "editor_tab",
@@ -194,8 +194,8 @@
             "@document": 14,
             "@form": 5,
             "@immediate": 1,
-            "@menu": 5,
-            "@menuitem": 13,
+            "@menu": 6,
+            "@menuitem": 16,
             "@pane": 2,
             "@preferences": 1,
             "@session": 14,
@@ -218,8 +218,8 @@
     },
     "panecycle": {
         "json()": [
-            "tab3",
-            "tab10"
+            "tab8",
+            "tab2"
         ]
     },
     "panels": {
@@ -284,13 +284,13 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/brain/modules/simpleAnswer.js",
+            "focus": "tab8",
             "meta": {
                 "accessList": [
+                    "tab2",
                     "tab10",
                     "tab7",
                     "tab5",
-                    "tab2",
                     "tab4",
                     "tab9"
                 ]
@@ -307,7 +307,7 @@
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1487860420956
+                            "timestamp": 1487946817800
                         },
                         "filter": true,
                         "title": "cmd.js",
@@ -315,7 +315,7 @@
                         "ace": {}
                     },
                     "editorType": "ace",
-                    "active": false
+                    "active": true
                 },
                 {
                     "type": "tab",
@@ -402,13 +402,12 @@
                     "name": "tab10",
                     "path": "/brain/modules/simpleAnswer.js",
                     "className": [
-                        "tab10",
-                        "focus"
+                        "tab10"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1487860872018
+                            "timestamp": 1487860913568
                         },
                         "filter": true,
                         "title": "simpleAnswer.js",
@@ -416,7 +415,7 @@
                         "ace": {}
                     },
                     "editorType": "ace",
-                    "active": true
+                    "active": false
                 }
             ],
             "skin": "editor_tab",

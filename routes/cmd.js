@@ -61,7 +61,7 @@ router.post('/commands', function(req, res, next) {
     var command = req.body;
 
     for (var i = 0; i < command.questions.length; i++) {
-        command.body.questions[i] = removeSpecial.run(command.questions[i]);
+        command.questions[i] = removeSpecial.run(command.questions[i]);
     }
     req.models.Command.create(command, function(err, response) {
         if (err) return next(err);
