@@ -1,19 +1,102 @@
+var NLP = require('natural');
 var removeSpecial = require('../external/removeSpecialChars');
 
-exports.run = function(command, model, callback) {
-    
-    command = removeSpecial.run(command);
-    
-    model.find({
-        questions: command
-    }, function(err, result) {
-        if (err) console.log(err);
-        if (result.length > 0) {
-            var mod = require('./modules/' + result[0].module + '.js');
-            callback(mod.run(result));
+var mod = require('./modules');
+var __classifier = undefined;
+var __multiSessionData = [];
+
+var brain = {
+
+    init: function(model) {
+        model.find({}, function(err, skills) {
+            if (err) console.error(err);
+
+            console.log('initializing brain...');
+
+            //create classifier
+            console.log('creating classifier...');
+            __classifier = new NLP.LogisticRegressionClassifier();
+
+            console.log('loading skills...');
+            skills.forEach(function(item) {
+                for (var i = 0; i < item.model.length; i++) {
+                    __classifier.addDocument(item.model[i], item.name);
+                }
+            })
+
+            console.log('training classifier');
+            __classifier.train();
+        });
+
+    },
+    run: function(token, command, model, callback) {
+
+        command = removeSpecial.run(command);
+
+        var session = this.getMultiSessionToken(token);
+
+        if (session != undefined) {
+            //console.log('multisession uhull');
+            mod.run(token, command, session.skill, function(message) {
+                callback(message);
+            })
         }
-        else{
-            callback("Desculpe, não entendi.");
+        else {
+            //get skill
+            var skill = __classifier.classify(command);
+
+            if (__classifier.getClassifications(command)[0].value >= 0.6) {
+                model.find({
+                    name: skill
+                }, function(err, result) {
+                    if (err) console.log(err);
+
+                    console.log('found skill:', skill);
+                    if (result.length > 0) {
+                        var _item = result[0];
+
+                        mod.run(token, command, _item, function(message) {
+                            callback(message);
+                        });
+                    }
+                    else {
+                        callback("Desculpe, não entendi.");
+                    }
+                });
+            }
+            else {
+                callback("Desculpe, não entendi.");
+            }
         }
-    });
+    },
+    startMultiSession: function(token, skill) {
+        console.log('starting multisession...');
+        var data = this.getMultiSessionToken(token);
+        if (data == undefined) {
+            __multiSessionData.push({
+                token: token,
+                skill: skill
+            });
+        }
+        else {
+            data.skill = skill;
+        }
+    },
+    finishMultiSession: function(token) {
+        var data = this.getMultiSessionToken(token);
+        __multiSessionData.splice(__multiSessionData.indexOf(data), 1);
+    },
+    getMultiSessionToken: function(token) {
+        var result = undefined;
+        __multiSessionData.forEach(function(item) {
+            if (item.token == token) {
+                result = item;
+            }
+        });
+
+        return result;
+    },
+
 }
+
+module.exports = brain;

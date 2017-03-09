@@ -7,13 +7,14 @@ var removeSpecial = require('../external/removeSpecialChars');
 
 /* GET command page. */
 router.get('/', function(req, res, next) {
-    brain.run(req.query.msg, req.models.Command, function(result) {
-        var encodedResult = encodeURIComponent(result);
+    brain.run(req.query.token, req.query.msg, req.models.Skills, function(result) {
+       /* var encodedResult = encodeURIComponent(result);
         var token = (new Date()).getTime();
 
         var formattedURL = require("sprintf-js").sprintf(config.TTS.tts_url, encodedResult, token);
 
-        request.get(formattedURL).pipe(res);
+        request.get(formattedURL).pipe(res);*/
+        res.end(result);
     });
 
 });

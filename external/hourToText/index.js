@@ -1,7 +1,20 @@
 exports.run = function(){
     var d = calcTime(-2);
+
+    var result = '';
     
-    return "são "+ d.getHours() + " horas e " + d.getMinutes() + " minutos";
+    if(d.getHours() > 1){
+        result += 'são' + d.getHours() + ' horas';
+    }
+    else{
+        result += d.getHours() + ' hora';
+    }
+    
+    if(d.getMinutes() > 0){
+        result += ' e '+d.getMinutes() + ' minutos';
+    }
+    
+    return result;
 }
 
 function calcTime(offset) {

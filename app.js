@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var brain = require('./brain');
 
 var mongoose = require("mongoose"),
     models = require('./models'),
@@ -14,7 +15,7 @@ var app = express();
 
 //middleware(expose all collections to all routes)
 app.use(function(req, res, next) {
-    if (!models.Command) return next(new Error('No models loaded'));
+    if (!models.Command || !models.Skills) return next(new Error('No models loaded'));
     req.models = models;
     return next();
 });
@@ -61,5 +62,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+brain.init(models.Skills);
 
 module.exports = app;

@@ -1,0 +1,33 @@
+[{
+    name: "#Hello",
+    model: ["ola",
+        "oi",
+        "oi isa",
+        "ola como vai",
+        "oi isa como esta"
+    ],
+    entities: [],
+    answers: ["Oi", "Olá", "Oi, tudo bem?", "Pois não?"],
+    module: ""
+}, {
+    name: "#weather",
+    model: ["vai chover",
+        "vai fazer sol",
+        "como esta o tempo",
+        "qual a temperatura",
+        "como esta o clima",
+        "preciso levar um guarda chuva",
+        "preciso de um guarda-chuvas"
+    ],
+    entities: [{
+        type: "location",
+        isRequired: "true",
+        questions: ["Em qual cidade vc gostaria que eu olhasse?", "Onde?", "Em qual cidade?"]
+    }, {
+        type: "date",
+        isRequired: "true",
+        questions: ["Depende de qual dia vc quer saber.", "Que dia?", "Quando?"]
+    }],
+    answers: ["pois não"],
+    module: "weather"
+}]
