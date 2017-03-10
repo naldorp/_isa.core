@@ -21,12 +21,14 @@
     ],
     entities: [{
         type: "location",
-        isRequired: "true",
-        questions: ["Em qual cidade vc gostaria que eu olhasse?", "Onde?", "Em qual cidade?"]
+        isRequired: "false",
+        questions: ["Em qual cidade vc gostaria que eu olhasse?", "Onde?", "Em qual cidade?"],
+        defaultValue: "Brasilia"
     }, {
         type: "date",
-        isRequired: "true",
-        questions: ["Depende de qual dia vc quer saber.", "Que dia?", "Quando?"]
+        isRequired: "false",
+        questions: ["Depende de qual dia vc quer saber.", "Que dia?", "Quando?"],
+        defaultValue: "Hoje"
     }],
     answers: ["pois não"],
     module: "weather"

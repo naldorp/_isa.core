@@ -7,7 +7,8 @@ var skillS = new mongoose.Schema({
    entities:[{
        type: {type:String},
        isRequired: Boolean,
-       questions:[String]
+       questions:[String],
+       defaultValue: String
    }],
    answers:[String],
    module: String

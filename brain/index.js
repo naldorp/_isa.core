@@ -1,6 +1,8 @@
 var NLP = require('natural');
 var removeSpecial = require('../external/removeSpecialChars');
 
+require('draftlog').into(console);
+
 var mod = require('./modules');
 var __classifier = undefined;
 var __multiSessionData = [];
@@ -11,20 +13,15 @@ var brain = {
         model.find({}, function(err, skills) {
             if (err) console.error(err);
 
-            console.log('initializing brain...');
-
             //create classifier
-            console.log('creating classifier...');
             __classifier = new NLP.LogisticRegressionClassifier();
 
-            console.log('loading skills...');
             skills.forEach(function(item) {
                 for (var i = 0; i < item.model.length; i++) {
                     __classifier.addDocument(item.model[i], item.name);
                 }
-            })
-
-            console.log('training classifier');
+            });
+            
             __classifier.train();
         });
 
@@ -36,7 +33,6 @@ var brain = {
         var session = this.getMultiSessionToken(token);
 
         if (session != undefined) {
-            //console.log('multisession uhull');
             mod.run(token, command, session.skill, function(message) {
                 callback(message);
             })
@@ -51,7 +47,6 @@ var brain = {
                 }, function(err, result) {
                     if (err) console.log(err);
 
-                    console.log('found skill:', skill);
                     if (result.length > 0) {
                         var _item = result[0];
 
@@ -70,7 +65,6 @@ var brain = {
         }
     },
     startMultiSession: function(token, skill) {
-        console.log('starting multisession...');
         var data = this.getMultiSessionToken(token);
         if (data == undefined) {
             __multiSessionData.push({

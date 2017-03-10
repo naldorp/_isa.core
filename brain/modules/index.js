@@ -6,12 +6,12 @@ var MainModule = {
         if (item.module == "") {
             item.module = "simpleAnswer";
         }
-        var mod = require('./' + item.module + '.js');
+        var mod = require('./lib/' + item.module + '');
 
         this.classifyEntities(command, item, function(err, skill) {
             if (err) console.error(err);
 
-            callback(mod.run(token, skill));
+            mod.run(token, skill, callback);
         })
     },
     classifyEntities: function(command, skill, callback) {
@@ -31,21 +31,18 @@ var MainModule = {
             //ask for the entities in the service
             var formattedURL = require("sprintf-js").sprintf(config.NLP.npl_helper_url, this.tokenizeMessageWords(command, skill), string_entities);
 
-            //console.log(formattedURL);
             request.get(formattedURL, function(err, response, body) {
                 if (err) console.error(err);
 
                 if (response.statusCode == 200) {
-                    var data = JSON.parse(body); //
-                    //console.log(data);
+                    var data = JSON.parse(body);
+
                     skill.entities.forEach(function(item) {
                         if (data.entities[item.type] != undefined) {
                             item.text = data.entities[item.type].text;
                             item.value = data.entities[item.type].value;
                         }
                     });
-
-                    //console.log(skill);
 
                     callback(undefined, skill);
                 }
@@ -71,7 +68,7 @@ var MainModule = {
                 command = command.replace(words[z], '');
             }
         }
-        
+
         return command.trim();
     }
 }

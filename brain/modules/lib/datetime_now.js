@@ -1,4 +1,4 @@
-var hourToText = require('../../external/hourToText');
+var hourToText = require('../../../external/hourToText');
 var Random = require('random-js');
 
 exports.run = function(commandModel){

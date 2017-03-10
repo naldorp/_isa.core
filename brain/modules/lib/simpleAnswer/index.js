@@ -1,6 +1,6 @@
 var Random = require('random-js');
 var lastAnswer = -1;
-exports.run = function(token, skill){
+exports.run = function(token, skill, callback){
     if(skill.answers.length <= 2)
         return skill.answers[0];
     
@@ -15,7 +15,7 @@ exports.run = function(token, skill){
         }
     }
     
-    return skill.answers[value];
+    callback(skill.answers[value]);
 }
 
 

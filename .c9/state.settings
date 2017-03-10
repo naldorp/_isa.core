@@ -15,16 +15,16 @@
     },
     "console": {
         "@expanded": true,
-        "@height": 267,
+        "@height": 212,
         "@maximized": "false",
         "json()": {
             "meta": {
                 "accessList": [
                     "tab21",
                     "tab22",
+                    "tab7",
                     "tab1",
-                    "tab15",
-                    "tab7"
+                    "tab15"
                 ]
             },
             "name": "pane1",
@@ -49,7 +49,7 @@
                             "id": "devel_833",
                             "cwd": "",
                             "width": 1594,
-                            "height": 241
+                            "height": 186
                         }
                     },
                     "editorType": "terminal",
@@ -72,7 +72,7 @@
                             "id": "devel_114",
                             "cwd": "",
                             "width": 1594,
-                            "height": 241
+                            "height": 186
                         }
                     },
                     "editorType": "terminal",
@@ -96,6 +96,13 @@
                         "immediate": {
                             "type": "jsbrowser",
                             "history": [
+                                "new Date().toDateString",
+                                "new Date().toDateString()",
+                                "new Date().getDay()",
+                                "new Date().getDate()",
+                                "new Date()",
+                                "\"asda\".getDate",
+                                "\"asda\".getDate()",
                                 "'asdasd'.length",
                                 "var a = [123,23];\nvar b = [321,456];\na.concat(b);\nconsole.log(a)",
                                 "var a = [123,23];\nvar b = [321,456];\na.push(b);\nconsole.log(a)",
@@ -200,7 +207,7 @@
                             "id": "devel_531",
                             "cwd": "",
                             "width": 1594,
-                            "height": 241
+                            "height": 186
                         }
                     },
                     "editorType": "terminal",
@@ -225,7 +232,7 @@
                             "id": "devel_565",
                             "cwd": "",
                             "width": 1594,
-                            "height": 241
+                            "height": 186
                         }
                     },
                     "editorType": "terminal",
@@ -253,16 +260,16 @@
             "@acestatus": 2,
             "@datagrid": 1,
             "@divider": 5,
-            "@document": 18,
+            "@document": 20,
             "@form": 5,
             "@immediate": 1,
-            "@menu": 5,
-            "@menuitem": 13,
+            "@menu": 6,
+            "@menuitem": 16,
             "@pane": 1,
             "@preferences": 1,
-            "@session": 18,
-            "@tab": 5,
-            "@undoManager": 18
+            "@session": 20,
+            "@tab": 3,
+            "@undoManager": 20
         }
     },
     "findinfiles": {
@@ -280,8 +287,8 @@
     },
     "panecycle": {
         "json()": [
+            "tab21",
             "tab4",
-            "tab22",
             "tab11"
         ]
     },
@@ -324,7 +331,11 @@
                 "/",
                 "/brain",
                 "/brain/modules",
-                "/routes"
+                "/routes",
+                "/models",
+                "/brain/modules/lib",
+                "/config",
+                "/brain/modules/lib/weather"
             ]
         }
     },
@@ -334,6 +345,7 @@
     "search-history": {
         "search": {
             "json()": [
+                "path",
                 "mod(",
                 "skill de",
                 "console",
@@ -369,7 +381,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489086995368
+                                    "timestamp": 1489165706978
                                 },
                                 "filter": true,
                                 "title": "index.js",
@@ -389,7 +401,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489084306540
+                                    "timestamp": 1489084306618
                                 },
                                 "filter": true,
                                 "title": "cmd.js",
@@ -402,18 +414,18 @@
                         {
                             "type": "tab",
                             "name": "tab27",
-                            "path": "/brain/modules/simpleAnswer.js",
+                            "path": "/brain/modules/lib/simpleAnswer/index.js",
                             "className": [
                                 "tab27"
                             ],
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489085974627
+                                    "timestamp": 1489167851070
                                 },
                                 "filter": true,
-                                "title": "simpleAnswer.js",
-                                "tooltip": "/brain/modules/simpleAnswer.js",
+                                "title": "index.js",
+                                "tooltip": "/brain/modules/lib/simpleAnswer/index.js",
                                 "ace": {}
                             },
                             "editorType": "ace",
@@ -528,48 +540,6 @@
                         },
                         {
                             "type": "tab",
-                            "name": "tab31",
-                            "path": "/models/skill.js",
-                            "className": [
-                                "tab31"
-                            ],
-                            "document": {
-                                "filter": true,
-                                "title": "skill.js",
-                                "tooltip": "/models/skill.js",
-                                "ace": {
-                                    "folds": [],
-                                    "scrolltop": 0,
-                                    "scrollleft": 0,
-                                    "selection": {
-                                        "start": {
-                                            "row": 7,
-                                            "column": 26
-                                        },
-                                        "end": {
-                                            "row": 7,
-                                            "column": 26
-                                        },
-                                        "isBackwards": false
-                                    },
-                                    "options": {
-                                        "guessTabSize": true,
-                                        "useWrapMode": false,
-                                        "wrapToView": true
-                                    },
-                                    "firstLineState": 0
-                                },
-                                "hash": "1a8b0efc2152b56d0b6655e3c84fa0bc60ece8bf",
-                                "meta": {
-                                    "timestamp": 1489068845076
-                                },
-                                "changed": false
-                            },
-                            "editorType": "ace",
-                            "active": false
-                        },
-                        {
-                            "type": "tab",
                             "name": "tab32",
                             "path": "/models/command.js",
                             "className": [
@@ -665,7 +635,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489086990338
+                                    "timestamp": 1489170173096
                                 },
                                 "filter": true,
                                 "title": "index.js",
@@ -678,22 +648,42 @@
                         {
                             "type": "tab",
                             "name": "tab4",
-                            "path": "/brain/modules/weather.js",
+                            "path": "/brain/modules/lib/weather/index.js",
                             "className": [
                                 "tab4"
                             ],
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489087271861
+                                    "timestamp": 1489170561682
                                 },
                                 "filter": true,
-                                "title": "weather.js",
-                                "tooltip": "/brain/modules/weather.js",
+                                "title": "index.js",
+                                "tooltip": "/brain/modules/lib/weather/index.js",
                                 "ace": {}
                             },
                             "editorType": "ace",
                             "active": true
+                        },
+                        {
+                            "type": "tab",
+                            "name": "tab0",
+                            "path": "/brain/modules/lib/datetime_now.js",
+                            "className": [
+                                "tab0"
+                            ],
+                            "document": {
+                                "changed": false,
+                                "meta": {
+                                    "timestamp": 1489165738130
+                                },
+                                "filter": true,
+                                "title": "datetime_now.js",
+                                "tooltip": "/brain/modules/lib/datetime_now.js",
+                                "ace": {}
+                            },
+                            "editorType": "ace",
+                            "active": false
                         }
                     ],
                     "skin": "editor_tab",
@@ -701,14 +691,14 @@
                     "meta": {
                         "accessList": [
                             "tab4",
+                            "tab30",
                             "tab3",
                             "tab20",
-                            "tab27",
                             "tab24",
-                            "tab30",
+                            "tab27",
+                            "tab0",
                             "tab28",
                             "tab29",
-                            "tab31",
                             "tab32",
                             "tab33"
                         ]
@@ -728,7 +718,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489086840836
+                                    "timestamp": 1489168302830
                                 },
                                 "filter": true,
                                 "title": "skills.json",
@@ -746,42 +736,20 @@
                                 "tab26"
                             ],
                             "document": {
-                                "filter": true,
-                                "title": "index.js",
-                                "tooltip": "/config/index.js",
-                                "ace": {
-                                    "folds": [],
-                                    "scrolltop": 0,
-                                    "scrollleft": 0,
-                                    "selection": {
-                                        "start": {
-                                            "row": 5,
-                                            "column": 87
-                                        },
-                                        "end": {
-                                            "row": 5,
-                                            "column": 87
-                                        },
-                                        "isBackwards": false
-                                    },
-                                    "options": {
-                                        "guessTabSize": true,
-                                        "useWrapMode": false,
-                                        "wrapToView": true
-                                    },
-                                    "firstLineState": 0
-                                },
-                                "hash": "3ad6e62fd44cfa679fe9ab80bd35ec6a8d4b50d7",
+                                "changed": false,
                                 "meta": {
                                     "timestamp": 1489068912631
                                 },
-                                "changed": false
+                                "filter": true,
+                                "title": "index.js",
+                                "tooltip": "/config/index.js",
+                                "ace": {}
                             },
                             "editorType": "ace",
                             "active": false
                         }
                     ],
-                    "width": "29.73651191969887%",
+                    "width": "34.44165621079047%",
                     "skin": "editor_tab",
                     "skinset": "default",
                     "meta": {
@@ -797,7 +765,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/brain/modules/weather.js"
+            "/brain/modules/lib/weather/index.js"
         ]
     }
 }

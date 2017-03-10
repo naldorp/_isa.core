@@ -19,5 +19,8 @@
     "serve-favicon": "~2.3.2",
     "sprintf-js": "^1.0.3",
     "wikijs": "^2.1.0"
+  },
+  "devDependencies": {
+    "draftlog": "^1.0.10"
   }
 }
