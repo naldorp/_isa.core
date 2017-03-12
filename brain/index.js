@@ -1,6 +1,6 @@
 var NLP = require('natural');
 var removeSpecial = require('../external/removeSpecialChars');
-
+var config = require('../config');
 require('draftlog').into(console);
 
 var mod = require('./modules');
@@ -55,12 +55,12 @@ var brain = {
                         });
                     }
                     else {
-                        callback("Desculpe, não entendi.");
+                        callback(config.messages.naoEntendi);
                     }
                 });
             }
             else {
-                callback("Desculpe, não entendi.");
+                callback(config.messages.naoEntendi);
             }
         }
     },

@@ -22,9 +22,9 @@
                 "accessList": [
                     "tab21",
                     "tab22",
-                    "tab7",
                     "tab1",
-                    "tab15"
+                    "tab15",
+                    "tab7"
                 ]
             },
             "name": "pane1",
@@ -48,7 +48,7 @@
                         "terminal": {
                             "id": "devel_833",
                             "cwd": "",
-                            "width": 1594,
+                            "width": 1114,
                             "height": 186
                         }
                     },
@@ -63,8 +63,6 @@
                         "tab22"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {},
                         "filter": true,
                         "title": "bash - \"root@Isa: ~/c9sdk/workspaces/_isa\" ",
                         "tooltip": "bash - \"root@Isa: ~/c9sdk/workspaces/_isa\" ",
@@ -72,8 +70,12 @@
                             "id": "devel_114",
                             "cwd": "",
                             "width": 1594,
-                            "height": 186
-                        }
+                            "height": 186,
+                            "scrollTop": 16650
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {},
+                        "changed": false
                     },
                     "editorType": "terminal",
                     "active": false
@@ -86,14 +88,34 @@
                         "tab1"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1486571992151
-                        },
                         "filter": true,
                         "title": "Immediate (Javascript (browser))",
                         "tooltip": "Immediate (Javascript (browser))",
                         "immediate": {
+                            "folds": [],
+                            "scrolltop": 81,
+                            "scrollleft": 0,
+                            "selection": {
+                                "start": {
+                                    "row": 16,
+                                    "column": 0
+                                },
+                                "end": {
+                                    "row": 16,
+                                    "column": 0
+                                },
+                                "isBackwards": false
+                            },
+                            "options": {
+                                "guessTabSize": true,
+                                "useWrapMode": false,
+                                "wrapToView": true
+                            },
+                            "firstLineState": {
+                                "row": 3,
+                                "state": "start",
+                                "mode": "ace/mode/javascript"
+                            },
                             "type": "jsbrowser",
                             "history": [
                                 "new Date().toDateString",
@@ -185,7 +207,12 @@
                                 "process.env.PORT"
                             ],
                             "pos": -1
-                        }
+                        },
+                        "hash": "974c758dfb06f1a7684c442964a977408c184774",
+                        "meta": {
+                            "timestamp": 1486571992151
+                        },
+                        "changed": false
                     },
                     "editorType": "immediate",
                     "active": false
@@ -198,8 +225,6 @@
                         "tab15"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {},
                         "filter": true,
                         "title": "mongod - \"root@Isa: ~/workspaces/_isa.admin\" ",
                         "tooltip": "mongod - \"root@Isa: ~/workspaces/_isa.admin\" ",
@@ -207,8 +232,12 @@
                             "id": "devel_531",
                             "cwd": "",
                             "width": 1594,
-                            "height": 186
-                        }
+                            "height": 186,
+                            "scrollTop": -1
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {},
+                        "changed": false
                     },
                     "editorType": "terminal",
                     "active": false
@@ -221,10 +250,6 @@
                         "tab7"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1488547292186
-                        },
                         "filter": true,
                         "title": "bash - \"root@Isa: ~/workspaces/_isa\" ",
                         "tooltip": "bash - \"root@Isa: ~/workspaces/_isa\" ",
@@ -232,8 +257,14 @@
                             "id": "devel_565",
                             "cwd": "",
                             "width": 1594,
-                            "height": 186
-                        }
+                            "height": 186,
+                            "scrollTop": 4228
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1488547292186
+                        },
+                        "changed": false
                     },
                     "editorType": "terminal",
                     "active": false
@@ -256,20 +287,20 @@
     },
     "ext": {
         "counters": {
-            "@ace": 3,
+            "@ace": 2,
             "@acestatus": 2,
             "@datagrid": 1,
             "@divider": 5,
-            "@document": 20,
+            "@document": 18,
             "@form": 5,
             "@immediate": 1,
-            "@menu": 6,
-            "@menuitem": 16,
+            "@menu": 5,
+            "@menuitem": 13,
             "@pane": 1,
             "@preferences": 1,
-            "@session": 20,
+            "@session": 14,
             "@tab": 3,
-            "@undoManager": 20
+            "@undoManager": 18
         }
     },
     "findinfiles": {
@@ -288,8 +319,8 @@
     "panecycle": {
         "json()": [
             "tab21",
-            "tab4",
-            "tab11"
+            "tab20",
+            "tab26"
         ]
     },
     "panels": {
@@ -330,7 +361,6 @@
                 "/node_modules/wikijs/dist",
                 "/",
                 "/brain",
-                "/brain/modules",
                 "/routes",
                 "/models",
                 "/brain/modules/lib",
@@ -365,7 +395,7 @@
     },
     "tabs": {
         "json()": {
-            "focus": "tab21",
+            "focus": "/brain/index.js",
             "nodes": [
                 {
                     "type": "pane",
@@ -376,7 +406,8 @@
                             "name": "tab20",
                             "path": "/brain/index.js",
                             "className": [
-                                "tab20"
+                                "tab20",
+                                "focus"
                             ],
                             "document": {
                                 "changed": false,
@@ -389,7 +420,7 @@
                                 "ace": {}
                             },
                             "editorType": "ace",
-                            "active": false
+                            "active": true
                         },
                         {
                             "type": "tab",
@@ -399,14 +430,40 @@
                                 "tab24"
                             ],
                             "document": {
-                                "changed": false,
-                                "meta": {
-                                    "timestamp": 1489084306618
-                                },
                                 "filter": true,
                                 "title": "cmd.js",
                                 "tooltip": "/routes/cmd.js",
-                                "ace": {}
+                                "ace": {
+                                    "folds": [],
+                                    "scrolltop": 0,
+                                    "scrollleft": 0,
+                                    "selection": {
+                                        "start": {
+                                            "row": 25,
+                                            "column": 25
+                                        },
+                                        "end": {
+                                            "row": 25,
+                                            "column": 25
+                                        },
+                                        "isBackwards": false
+                                    },
+                                    "options": {
+                                        "guessTabSize": true,
+                                        "useWrapMode": false,
+                                        "wrapToView": true
+                                    },
+                                    "firstLineState": {
+                                        "row": 20,
+                                        "state": "start",
+                                        "mode": "ace/mode/javascript"
+                                    }
+                                },
+                                "hash": "ee17a3ff38d75ed0c54e5461a84863e7c55987f3",
+                                "meta": {
+                                    "timestamp": 1489084306618
+                                },
+                                "changed": false
                             },
                             "editorType": "ace",
                             "active": false
@@ -419,14 +476,14 @@
                                 "tab27"
                             ],
                             "document": {
-                                "changed": false,
                                 "meta": {
                                     "timestamp": 1489167851070
                                 },
                                 "filter": true,
                                 "title": "index.js",
                                 "tooltip": "/brain/modules/lib/simpleAnswer/index.js",
-                                "ace": {}
+                                "ace": {},
+                                "changed": false
                             },
                             "editorType": "ace",
                             "active": false
@@ -526,14 +583,36 @@
                                 "tab30"
                             ],
                             "document": {
-                                "changed": false,
-                                "meta": {
-                                    "timestamp": 1489067926367
-                                },
                                 "filter": true,
                                 "title": "app.js",
                                 "tooltip": "/app.js",
-                                "ace": {}
+                                "ace": {
+                                    "folds": [],
+                                    "scrolltop": 0,
+                                    "scrollleft": 0,
+                                    "selection": {
+                                        "start": {
+                                            "row": 26,
+                                            "column": 17
+                                        },
+                                        "end": {
+                                            "row": 26,
+                                            "column": 36
+                                        },
+                                        "isBackwards": true
+                                    },
+                                    "options": {
+                                        "guessTabSize": true,
+                                        "useWrapMode": false,
+                                        "wrapToView": true
+                                    },
+                                    "firstLineState": 0
+                                },
+                                "hash": "4a07aa580eb8140c1d3c7bc02c456a7075a41130",
+                                "meta": {
+                                    "timestamp": 1489067926367
+                                },
+                                "changed": false
                             },
                             "editorType": "ace",
                             "active": false
@@ -633,14 +712,36 @@
                                 "tab3"
                             ],
                             "document": {
-                                "changed": false,
-                                "meta": {
-                                    "timestamp": 1489170173096
-                                },
                                 "filter": true,
                                 "title": "index.js",
                                 "tooltip": "/brain/modules/index.js",
-                                "ace": {}
+                                "ace": {
+                                    "folds": [],
+                                    "scrolltop": 0,
+                                    "scrollleft": 0,
+                                    "selection": {
+                                        "start": {
+                                            "row": 1,
+                                            "column": 25
+                                        },
+                                        "end": {
+                                            "row": 1,
+                                            "column": 25
+                                        },
+                                        "isBackwards": false
+                                    },
+                                    "options": {
+                                        "guessTabSize": true,
+                                        "useWrapMode": false,
+                                        "wrapToView": true
+                                    },
+                                    "firstLineState": 0
+                                },
+                                "hash": "4a79d7a894fedabe80df4ce9540e59e1630f2286",
+                                "meta": {
+                                    "timestamp": 1489170173277
+                                },
+                                "changed": false
                             },
                             "editorType": "ace",
                             "active": false
@@ -655,7 +756,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489170561682
+                                    "timestamp": 1489170561828
                                 },
                                 "filter": true,
                                 "title": "index.js",
@@ -663,7 +764,7 @@
                                 "ace": {}
                             },
                             "editorType": "ace",
-                            "active": true
+                            "active": false
                         },
                         {
                             "type": "tab",
@@ -673,14 +774,36 @@
                                 "tab0"
                             ],
                             "document": {
-                                "changed": false,
-                                "meta": {
-                                    "timestamp": 1489165738130
-                                },
                                 "filter": true,
                                 "title": "datetime_now.js",
                                 "tooltip": "/brain/modules/lib/datetime_now.js",
-                                "ace": {}
+                                "ace": {
+                                    "folds": [],
+                                    "scrolltop": 0,
+                                    "scrollleft": 0,
+                                    "selection": {
+                                        "start": {
+                                            "row": 9,
+                                            "column": 1
+                                        },
+                                        "end": {
+                                            "row": 9,
+                                            "column": 1
+                                        },
+                                        "isBackwards": false
+                                    },
+                                    "options": {
+                                        "guessTabSize": true,
+                                        "useWrapMode": false,
+                                        "wrapToView": true
+                                    },
+                                    "firstLineState": 0
+                                },
+                                "hash": "a5bc542f440919a65bc923692601553ce82173fc",
+                                "meta": {
+                                    "timestamp": 1489165738130
+                                },
+                                "changed": false
                             },
                             "editorType": "ace",
                             "active": false
@@ -690,17 +813,17 @@
                     "skinset": "default",
                     "meta": {
                         "accessList": [
-                            "tab4",
-                            "tab30",
-                            "tab3",
                             "tab20",
+                            "tab4",
                             "tab24",
                             "tab27",
-                            "tab0",
                             "tab28",
                             "tab29",
+                            "tab30",
                             "tab32",
-                            "tab33"
+                            "tab33",
+                            "tab3",
+                            "tab0"
                         ]
                     }
                 },
@@ -726,7 +849,7 @@
                                 "ace": {}
                             },
                             "editorType": "ace",
-                            "active": true
+                            "active": false
                         },
                         {
                             "type": "tab",
@@ -738,7 +861,7 @@
                             "document": {
                                 "changed": false,
                                 "meta": {
-                                    "timestamp": 1489068912631
+                                    "timestamp": 1489361119457
                                 },
                                 "filter": true,
                                 "title": "index.js",
@@ -746,7 +869,7 @@
                                 "ace": {}
                             },
                             "editorType": "ace",
-                            "active": false
+                            "active": true
                         }
                     ],
                     "width": "34.44165621079047%",
@@ -754,8 +877,8 @@
                     "skinset": "default",
                     "meta": {
                         "accessList": [
-                            "tab11",
-                            "tab26"
+                            "tab26",
+                            "tab11"
                         ]
                     }
                 }
@@ -765,7 +888,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/brain/modules/lib/weather/index.js"
+            "/brain/index.js"
         ]
     }
 }

@@ -4,5 +4,9 @@ module.exports = {
     },
     NLP:{
         npl_helper_url: 'http://isa.westcentralus.cloudapp.azure.com:3001/?message=%1$s&entities=%2$s'
+    },
+    messages:
+    {
+        naoEntendi: 'Desculpe, não entendi'
     }
 }
